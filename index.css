@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: antiquewhite;
+    --text-color:black;
+    --main-color: rgb(80, 56, 17);
+    --header-color: rgb(237, 157, 91);
+    ;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color); 
+}
+
+.header{
+    background: var(--header-color);
+    height: 50px;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 15px;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-weight: 700;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 900;
+    /* font-size: 1.7rem; */
+    color: var(--second-bg-color);
+    cursor: default;
+
+}
+
+.navbar a{
+    font-weight: bold;
+    color: var(--second-bg-color);
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active{
+    color: var(--main-color);
+}
+
+.home{
+    /* background: #0ef; */
+    position: relative;
+    /* width: 100%; */
+    display: flex;
+    padding: 10px;
+    top: 50px ;
+    height: 90vh;
+    justify-content: space-between;
+}
+
+.home-content{
+    /* background: rgb(212, 92, 92); */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    top: -50px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 15%;
+    transition: .5s ease;
+}
+
+.heading_front{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.webchat-name{
+    color: brown;
+}
+
+.image-think{
+    z-index: -1;
+}
+.multi-text-head{
+    color: brown;
+    display: flex;
+    justify-content: center;
+    font-size: 2.8rem;
+    transition: .5s ease;
+}
+
+
+.home .home-content p{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 18px ;
+    transition: .5s ease;
+}
+
+.home::before{
+    position: absolute;
+    content: '';
+    visibility: 40%;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,#ffae00, pink);
+    animation: object1 6s linear infinite;
+    box-shadow: 0 0 1rem var(--second-bg-color);
+    z-index: -1;
+}
+
+.home::after{
+    position: absolute;
+    visibility: 50%;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#ff9900, pink);
+    animation: object2 6s linear infinite;
+    z-index: -1;
+}
+
+@keyframes object1 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2 {
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.hangout-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 35px;
+    transition: .5s ease;
+}
+.about .hangout-img-text{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+
+}
+
+.hangout-img-text img{
+    margin-left: -50px;
+    transition: .5s ease;
+}
+
+.hangout-text{
+    position: relative;
+    font-weight: 500;
+    width: 300px;
+    justify-content: center;
+    transform: translate(50%);
+    padding-top: 100px;
+    align-content: center;
+    transition: .5s ease;
+}
+
+.footer{
+    background: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .5s ease;
+}
+
+.footertotop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+    cursor: pointer;
+}
+.footertotop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #bca741;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+

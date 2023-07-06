@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>Page-1</title>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <a href="#Home" class="logo">Web-Chat</a>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <!-- Header-End -->
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3 class="heading_front"><span>Let's Explore: </span>  <span class="webchat-name">Web-Chat</span> </h3>
+            <h1 class="multi-text-head"><span class="multi-text" id="multi-text">Group-Chat</span></h1>
+            <p>...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+        </div>
+    </section>
+
+    <!-- Home Section End -->
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1 class="hangout-title">Hangout Zone</h1>
+        <div class="hangout-img-text">
+            <img src="Image/webchat.png" alt="">
+            <p class="hangout-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui maiores eveniet reiciendis quam eligendi assumenda nostrum repellat illum. Sit voluptate exercitationem pariatur corporis in, optio atque quas hic accusamus.</p>
+        </div>
+        
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-info">
+            <p>Copyright &copy; 2023| All Rights Are Reserved</p>
+        </div>
+        <div class="footertotop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Javascript for Multi-text -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multi-text",{
+            strings: ["Group-Chat","Friend-Chat", "Discussion","Sharing-Vibe"],loop:true,
+            typeSpeed:80,
+            backSpeed:80,
+            backDelay:1500
+        })
+    </script>
+    <!-- END  -->
+</body>
+</html>
